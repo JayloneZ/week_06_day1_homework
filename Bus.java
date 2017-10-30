@@ -19,4 +19,8 @@ class Bus{
     int passengerCount = passengerCount();
     passengers[passengerCount] = person;
   }
+
+  public boolean isFull() {
+    return passengerCount() == passengers.length;
+  }
 }
