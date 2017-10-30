@@ -15,13 +15,13 @@ public class BusTest {
 
   @Test
   public void busStartsEmpty() {
-    assertEquals(0, bus.count());
+    assertEquals(0, bus.passengerCount());
   }
 
-  // @Test
-  // public void canTakePassengers() {
-  //   bus.take(person);
-  //   assertEquals(1, bus.count)
-  // }
+  @Test
+  public void canTakePassengers() {
+    bus.take(person);
+    assertEquals(1, bus.passengerCount());
+  }
 
 }
