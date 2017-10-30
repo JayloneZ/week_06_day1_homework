@@ -5,10 +5,12 @@ class Bus{
     this.passengers = new Person[5];
   }
 
-  private int count() {
+  public int count() {
     int count = 0;
     for( Person person : passengers ) {
-      count++;
+      if( person != null) {
+        count++;
+      }
     }
     return count;
   }
