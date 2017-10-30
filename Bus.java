@@ -16,6 +16,9 @@ class Bus{
   }
 
   public void take(Person person) {
+    if(isFull()) {
+      return;
+    }
     int passengerCount = passengerCount();
     passengers[passengerCount] = person;
   }
