@@ -1,5 +1,5 @@
 class Bus{
-  private Person[] passengers;
+  public Person[] passengers;
 
   public Bus() {
     this.passengers = new Person[5];
